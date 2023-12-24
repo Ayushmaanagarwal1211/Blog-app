@@ -11,7 +11,7 @@ const bodyParser = require('body-parser');
  
 const path = require('path');
 const corsOptions = {
-    origin: 'https://blog-app-ebkn.vercel.app/',
+    origin: 'https://blog-app-ebkn.vercel.app',
     optionsSuccessStatus: 200, // Some legacy browsers (IE11, various SmartTVs) choke on 204
   };
 app.use(cors(corsOptions));
