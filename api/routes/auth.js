@@ -7,11 +7,8 @@ const jwt=require('jsonwebtoken')
 const post=require('../models/posts')
 const secret='mynameisayushmaan'
 const cors=require('cors')
-const corsOptions = {
-    origin: 'https://blog-app-ebkn.vercel.app',
-    optionsSuccessStatus: 200, // Some legacy browsers (IE11, various SmartTVs) choke on 204
-  };
-router.use(cors(corsOptions))
+
+router.use(cors())
 const middleware=require('../middleware/middleware')
 //create
 router.post('/register',async (req,res)=>{
