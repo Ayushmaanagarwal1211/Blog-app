@@ -72,7 +72,7 @@ const handleerror=async (msga)=>{
           return handleerror("Password Must Not Be Less Than 8 Charachters")
          }
       try{
-        const data=await axios.post('auth/register',{
+        const data=await axios.post('/api/auth/register',{
           name:uname.current.value,
           email: email.current.value,
           password:password.current.value,
