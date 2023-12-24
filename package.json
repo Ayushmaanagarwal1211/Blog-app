@@ -2,7 +2,7 @@
   "name": "blogapp",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://blog-app-6ba1.vercel.app/",
+  "proxy": "https://blog-app-m8pp.vercel.app/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
