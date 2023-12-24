@@ -10,11 +10,8 @@ const fs = require('fs');
 const bodyParser = require('body-parser');
  
 const path = require('path');
-const corsOptions = {
-    origin: 'https://blog-app-ebkn.vercel.app',
-    optionsSuccessStatus: 200, // Some legacy browsers (IE11, various SmartTVs) choke on 204
-  };
-app.use(cors(corsOptions));
+
+app.use(cors());
 app.use('/image',express.static('images'))
 // const upload = multer({ dest: './images/' })
 app.use(bodyParser.json({ limit: '10mb' }));
