@@ -17,7 +17,7 @@ export default function Topbar() {
 
   const [mobile,ismobile]=useState(false)
   const clickhandle=async()=>{
-    let ans=confirm("Are You Sure You want to Log Out?")
+    // let ans=confirm("Are You Sure You want to Log Out?")
     if(ans){await localStorage.removeItem("auth-token")
     navigate('/login')
     window.location.reload()}
